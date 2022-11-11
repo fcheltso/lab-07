@@ -29,10 +29,13 @@ evals<-read.csv("data/evals.csv", row.names=1)
 
 ```{r viz-score}
 ggplot(evals, aes(x = score)) +
-  geom_histogram(binwidth = 0.2)
+  geom_histogram(binwidth = 0.1)
 ```
 
-*Yes the distribution of score in dataframe evals is skewed. *
+*Yes the distribution of score in dataframe evals is skewed. Students have a *
+*bias towards give high ratings, with the cluster being around 4.5. There is a *
+*slight peak around 2.5 indicating some students are biased to give a low *
+*rating.*
 
 ### Exercise 2
 
