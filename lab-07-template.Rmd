@@ -29,10 +29,10 @@ evals<-read.csv("data/evals.csv", row.names=1)
 
 ```{r viz-score}
 ggplot(evals, aes(x = score)) +
-  geom_histogram()
+  geom_histogram(binwidth = 0.2)
 ```
 
-*Add your narrative here.*
+*Yes the distribution of score in dataframe evals is skewed. *
 
 ### Exercise 2
 
