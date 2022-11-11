@@ -28,7 +28,8 @@ evals<-read.csv("data/evals.csv", row.names=1)
 ### Exercise 1
 
 ```{r viz-score}
-# add code here
+ggplot(eval, aes(x = score)) +
+  geom_
 ```
 
 *Add your narrative here.*
