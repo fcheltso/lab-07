@@ -46,14 +46,17 @@ ggplot(evals, aes(x = score)) +
 # this uses the patchwork package loaded above
 # learn more about patchwork at https://patchwork.data-imaginist.com/
 # it might be useful for your presentations!
-plot_geom_point  <- ggplot(___)
+plot_geom_point  <- ggplot(evals, aes(x = score, y= bty_avg)) +
+  geom_point(na.rm = TRUE)
 
-plot_geom_jitter <- ggplot(___)
+plot_geom_jitter <- ggplot(evals, aes(x = score, y= bty_avg)) +
+  geom_jitter()
 
 plot_geom_point + plot_geom_jitter
 ```
 
-*Add your narrative here.*
+*It is a graph type that assigns a small random variation to each value so that * *values don't overlap one another. The initial plot hides the true number of *
+*data points and thus does not show where there are clusters.*
 
 ### Exercise 3
 
